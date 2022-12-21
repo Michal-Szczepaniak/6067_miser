@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 #define MATRIX_ROWS 5
-#define MATRIX_COLS 6
+#define MATRIX_COLS 15
 
 /*
  * Keyboard Matrix Assignments
@@ -39,15 +39,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-
-#define MATRIX_ROW_PINS { A15, B3, B4, B5, B7 }
-#define MATRIX_COL_PINS { B12, B13, B14, B15, A8, A10 }
+#define MATRIX_ROW_PINS { B12, B13, B14, B15, A8 }
+#define MATRIX_COL_PINS { B3, B4, B5, B6, B7, B8, A3, B1, A7, B0, A6, A4, A5, B10, A15 }
 #define UNUSED_PINS
 
 #define DIODE_DIRECTION COL2ROW
 
 #define AUDIO_INIT_DELAY
-#define AUDIO_PIN B10
+#define AUDIO_PIN A2
 #define AUDIO_PWM_DRIVER PWMD2
 #define AUDIO_PWM_CHANNEL 3
 #define AUDIO_PWM_PAL_MODE 1
@@ -55,6 +54,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define AUDIO_CLICKY
 #define AUDIO_CLICKY_FREQ_RANDOMNESS 1.5f
+
+#ifdef USER_SONG_LIST
+#define STARTUP_SONG SONG(BARKA)
+#else
+#define STARTUP_SONG SONG(STARTUP_SOUND)
+#endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
