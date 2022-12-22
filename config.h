@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID    0x6067
 #define PRODUCT_ID   0x2137
 #define DEVICE_VER   0x0001
-#define MANUFACTURER QMK
+#define MANUFACTURER "QMK"
 
 /* key matrix size */
 #define MATRIX_ROWS 5
@@ -41,7 +41,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { B12, B13, B14, B15, A8 }
 #define MATRIX_COL_PINS { B3, B4, B5, B6, B7, B8, A3, B1, A7, B0, A6, A4, A5, B10, A15 }
-#define UNUSED_PINS
 
 #define DIODE_DIRECTION COL2ROW
 
@@ -68,7 +67,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
-
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
