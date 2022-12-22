@@ -6,15 +6,6 @@
     "bootmagic": {
         "enabled": true
     },
-    "config_h_features": {
-        "audio": true,
-        "backlight": false,
-        "command": false,
-        "console": false,
-        "extrakey": true,
-        "nkro": true,
-        "rgblight": false
-    },
     "debounce": 5,
     "diode_direction": "COL2ROW",
     "features": {
@@ -27,7 +18,6 @@
         "rgblight": false
     },
     "keyboard_folder": "handwired/6067_miser",
-    "keymaps": {},
     "matrix_pins": {
         "cols": ["B3", "B4", "B5", "B6", "B7", "B8", "A3", "B1", "A7", "B0", "A6", "A4", "A5", "B10", "A15"],
         "rows": ["B12", "B13", "B14", "B15", "A8"]
@@ -39,12 +29,9 @@
     "mouse_key": {
         "enabled": true
     },
-    "parse_errors": [],
-    "parse_warnings": [],
     "platform": "STM32",
     "processor": "STM32F411",
     "processor_type": "arm",
-    "protocol": "ChibiOS",
     "usb": {
         "device_version": "0.0.1",
         "pid": "0x2137",
@@ -54,9 +41,7 @@
         "vid": "0x6067"
     },
     "layouts": {
-        "LAYOUT_6067": {
-            "c_macro": true,
-            "filename": "keyboards/handwired/6067_miser/6067_miser.h",
+        "LAYOUT": {
             "layout": [
                 { "label": "K000", "x": 0, "y": 0 },
                 { "label": "K001", "x": 1, "y": 0 },
